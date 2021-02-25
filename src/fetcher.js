@@ -18,7 +18,7 @@ async function run() {
   let end_of_stream = false;
   let cursor = null;
 
-  const state = {
+  const content = {
     responses: [],
     cursor: null,
     request_count: null,
@@ -44,9 +44,9 @@ async function run() {
     end_of_stream = data.end_of_stream;
     cursor = data.after_cursor;
 
-    state.cursor = data.after_cursor;
-    state.responses.push(request_count);
-    state.request_count = request_count;
+    content.cursor = data.after_cursor;
+    content.responses.push(request_count);
+    content.request_count = request_count;
 
     state.save(state);
     state.saveIndividual(data, request_count);
