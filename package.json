@@ -1,0 +1,27 @@
+{
+  "name": "zendesk-ticket-exporter",
+  "version": "1.0.0",
+  "description": "Exporting tickets from Zendesk via the API.",
+  "main": "index.js",
+  "scripts": {
+    "go": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucaspaiva1/zendesk-ticket-exporter.git"
+  },
+  "keywords": [
+    "zendesk"
+  ],
+  "author": "Lucas Paiva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucaspaiva1/zendesk-ticket-exporter/issues"
+  },
+  "homepage": "https://github.com/lucaspaiva1/zendesk-ticket-exporter#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0"
+  }
+}

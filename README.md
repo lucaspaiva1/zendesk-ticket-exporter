@@ -9,5 +9,5 @@ npm install
 ```
 
 ```bash
-node export.js
+npm run go
 ```
