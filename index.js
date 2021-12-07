@@ -7,8 +7,8 @@ const modules = {
 };
 
 async function run() {
-  await modules.fetcher();
-  await modules.handler();
+  // await modules.fetcher();
+  // await modules.handler();
   await modules.exporter();
 }
 

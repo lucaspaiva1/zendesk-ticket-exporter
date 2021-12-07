@@ -22,6 +22,7 @@
   "homepage": "https://github.com/lucaspaiva1/zendesk-ticket-exporter#readme",
   "dependencies": {
     "axios": "^0.21.1",
+    "csv-writer": "^1.6.0",
     "dotenv": "^8.2.0"
   }
 }

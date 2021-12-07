@@ -32,10 +32,17 @@ function saveTickets(content, fileName) {
   return fileName;
 }
 
+function loadTickets(fileName) {
+  const fileBuffer = fs.readFileSync(`./tmp/tickets/${fileName}.json`, "utf-8");
+  const contentJson = JSON.parse(fileBuffer);
+  return contentJson;
+}
+
 module.exports = {
   save,
   load,
   saveIndividual,
   loadIndividual,
   saveTickets,
+  loadTickets,
 };
